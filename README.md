@@ -1,4 +1,4 @@
-# Final-Exam #              :100:
+# Final-Exam              :100:
 
 ## Install 
  `npm install`
