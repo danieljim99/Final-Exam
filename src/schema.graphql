@@ -1,0 +1,32 @@
+type Query {
+    searchPosts(email: String!, token: ID!, post: ID, author: ID): [Post!]
+}
+
+type Mutation {
+    register(email: String!, password: String!, author: Boolean!): User!
+    login(email: String!, password: String!): User!
+    logout(email: String!, token: ID!): User!
+    publish(email: String!, token: ID!, title: String!, description: String!): Post!
+    removePost(email: String!, token: ID!, post: ID!): Post!
+    removeUser(email: String!, token: ID!): User!
+}
+
+type Subscription {
+    subscribeAuthor(email: String!, token: ID!, author: ID!): String!
+}
+
+type User {
+    _id: ID!
+    email: String!
+    password: String!
+    token: ID!
+    posts: [Post!]
+    author: Boolean!
+}
+
+type Post {
+    _id: ID!
+    title: String!
+    description: String!
+    author: User!
+}
