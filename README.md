@@ -1,12 +1,12 @@
-# Final-Exam
+# Final-Exam              :100:
 
-## Install
+## Install 
  `npm install`
 
  ## Run
  ```
  npm start
- Then wait until "Server Started" message appears in the console
+ Then wait until **"Server Started"** message appears in the console
  ```
 ## URL
 ```GraphQL of this application runs in: http://localhost:4000```
